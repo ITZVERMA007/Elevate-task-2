@@ -1,0 +1,130 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container{
+    border:2px solid black;
+    border-radius: 20px;
+    min-height: 30rem;
+    width:25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-text{
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    font-family: serif;
+    font-size: larger;
+    /* display: block; */
+}
+
+input:focus{
+    outline: none;
+}
+#task-add-btn{
+    margin-top: 20px;
+    height: 40px;
+    width:80px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(246, 87, 87);
+    border:none;
+    border-radius: 10px;
+
+}
+
+#task-add-btn i{
+    font-size: 15px;
+}
+
+#task-add-btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#tasks-list{
+    margin-top: auto;
+    width:100%;
+    height:75%;
+    /* border:2px solid green; */
+    border-radius:20px;
+    /* display:flex; */
+    flex-direction: column;
+    flex-grow: 1;
+    /* flex-wrap: wrap; */
+
+}
+
+#task-items{
+    list-style: none;
+}
+.list-item{
+    height:40px;
+    width:90%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* padding: 10px; */
+    align-items: center;
+    font-family: cursive;
+    /* font-size: large; */
+    word-wrap: break-word;
+}
+
+.cross-icon{
+    /* margin-left: 5px; */
+    color:red;
+    font-size: larger;
+}
+
+.cross-icon-btn{
+    margin-left: 5px;
+    margin-top: .55em;
+    background-color: white;
+    border: none;
+}
+
+.cross-icon-btn:hover{
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+#task-checkbox{
+    margin-right: 10px;
+    margin-top: .68em;
+    transform: scale(1.3);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.list-item span {
+    flex: 1; /* Allows text to take available space */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 18px;
+    white-space: normal; /* Allows multi-line wrapping */
+}
+
+#task-clear{
+    margin-top:10px;
+    background-color:black;
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:100%;
+    height:30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
