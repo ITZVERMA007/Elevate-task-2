@@ -1,3 +1,3 @@
 This is basic to-do list web page 
 
-Run it using node/nodemon in your local host
+Clone it and give it a try
